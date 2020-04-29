@@ -14,5 +14,4 @@ urlpatterns = [
     url(r'^$', RedirectView.as_view(url='api/v1/')),
     url(r'^api/v1/', include('api.urls')),
     url(r'^health$', views.health),
-    url(r'^form$', views.form),
 ]
